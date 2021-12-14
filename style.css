@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* body{
+  
+} */ 
+
+.maincont{
+    margin: 8% 8% 8% 8%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cont1{
+    width: 52%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 20% 50% 10% 20%;
+    grid-row-gap: 15px;
+    
+}
+#clock-image{
+    /* border: 2px solid red; */
+    background-image: url("./clock.jpeg");
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+}
+#daily-routine{
+    
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.daily-routine-inner{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 33%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#morning{
+    display: inline-block;
+}
+#morning img{
+    margin-top: 60%;
+    margin-left: 30%;
+    display: inline-block;
+    background-position: center;
+    
+}
+.common{
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+}
+#wakeup-time{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    margin-left: 10%;
+}
+#lunch-time{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    margin-left: 18%;
+}
+#nap-time{
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    margin-left: 25%;
+}
+#settime-button{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(113deg,rgb(48, 18, 180),rgb(216, 40, 157));
+    color: white;
+    width: 80%;
+    margin-top: 5%;
+    /* margin-left: -33%; */
+    font-size: 20px;
+    font-weight: bold;
+}
+#settime-button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 18px #dfe5e977;
+}
+.cont2{
+    width: 45%;
+    height: 75vh;
+    display: grid;
+    grid-template-rows: 20% 95%;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 30px;  
+}
+#digital-clock{
+    /* border: 2px solid red; */
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 60%;
+    width: 100%;
+}
+#clock1{
+    width: 15%;
+    height: 80%;
+    float: left;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding-right: 5%;
+    /* font-size: 15px; */
+    font-weight: bold;
+    color: rgb(75, 2, 75);
+}
+.clock2{
+    width: 15%;
+    height: 60%;
+    border: 1px solid rgb(218, 69, 173);
+    float: left;
+    color: rgb(245, 234, 245);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(48, 8, 48);
+    font-weight: bold;
+    border-radius: 10%;
+}
+.am-pm{
+    height: 60%;
+    width: 15%;
+    margin-top: 0%;
+    margin-left: 2%;
+    border: 0px solid rgb(158, 139, 139);
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(75, 2, 75);
+}
+.div1{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+    opacity: 0.71;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: rgb(238, 205, 217);
+}
+.div2{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    margin: auto;
+    opacity: 0.22;
+    z-index: -2;
+    border-radius: 10px;
+    background-color: rgb(236, 230, 235);
+}
+#right-bottom{
+    border: 0px solid purple;
+    position: relative;
+    /* border: 5px solid red; */
+    
+}
+#text-container{
+    border: 5px solid rgb(107, 60, 196);
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(100, 84, 168);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 10%;
+}
+#img-container{
+    background-image: url("./baloon.jpg");
+    /* border: 5px solid red; */
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+#dynamic-block{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px;
+    font-size: 25px;
+    border: 2px solid rgb(75, 26, 153);
+    background-color: #3D087B;
+    color: white;
+    margin-top: 2%;
+    /* margin: auto; */
+    width: 60%;
+    border-radius: 1rem;
+    font-style: italic;
+    
+}
+@media (max-width:800px) {
+    .maincont{
+        justify-content: flex-start;
+    }
+    .cont1{
+        width:90%;
+        right: 0;
+    }
+    .cont2{
+        margin-top: 50px;
+        width: 90%;
+    }
+    #daily-routine-inner{
+        justify-content: flex-start;
+    }
+}
